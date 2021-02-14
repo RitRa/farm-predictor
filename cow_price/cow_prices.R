@@ -7,7 +7,7 @@ library(dplyr)
 
 # import the data
 
-cowprice = read.csv(file ="~/Dropbox/Study/github/predict_cow_price/cow_prices.csv")
+cowprice = read.csv(file ="~/Dropbox/Study/github/farm-predictor/cow_price/data/cow_prices.csv")
 
 str(cowprice)
 
@@ -35,7 +35,7 @@ summary(modelReg)
 
 
 # time to preict
-cowweight = read.csv(file ="~/Dropbox/Study/github/predict_cow_price/cow_weight.csv")
+cowweight = read.csv(file ="~/Dropbox/Study/github/farm-predictor/cow_price/data/cow_weight.csv")
 
 
 predictTest = predict(modelReg, newdata=cowweight)

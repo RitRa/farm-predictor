@@ -13,7 +13,7 @@ library(dplyr)
 
 # import the data
 
-cowprice = read.csv(file ="~/Dropbox/Study/github/predict_cow_price/cow_prices.csv")
+cowprice = read.csv(file ="~/Dropbox/Study/github/farm-predictor/cow_price/data/cow_prices.csv")
 
 str(cowprice)
 
@@ -27,7 +27,7 @@ modelReg = lm(price ~ weight, data=cowprice)
 
 
 # predict teh 
-#cowweight = read.csv(file ="~/Dropbox/Study/github/predict_cow_price/cow_weight.csv")
+#cowweight = read.csv(file ="~/Dropbox/Study/github/farm_predictor/cow_weight.csv")
 
 
 #predicted_df <- predict(modelReg, newdata=cowweight) 
